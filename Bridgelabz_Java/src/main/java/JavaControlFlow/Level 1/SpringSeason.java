@@ -1,3 +1,14 @@
+/*
+Problem 7 - GCR Control Flow Level 1
+Write a program SpringSeason that takes two int values month and day from the command line and prints “Its a Spring Season” otherwise prints “Not a Spring Season”. 
+Hint => 
+Spring Season is from March 20 to June 20
+
+
+* Author: Dheeraj Buchha
+* Date: 21-09-2026
+*/
+
 import java.util.Scanner;
 
 public class SpringSeason {

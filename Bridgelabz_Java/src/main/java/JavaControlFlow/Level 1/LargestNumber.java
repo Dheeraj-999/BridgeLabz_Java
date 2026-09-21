@@ -1,3 +1,17 @@
+/*
+Problem 3 - GCR Control Flow Level 1
+Write a program to check if the first, second, or third number is the largest of the three.
+I/P => number1, number2, number3
+O/P => 
+Is the first number the largest? ____
+Is the second number the largest? ___
+Is the third number the largest? ___
+
+
+* Author: Dheeraj Buchha
+* Date: 21-09-2026
+*/
+
 import java.util.Scanner;
 
 public class LargestNumber {

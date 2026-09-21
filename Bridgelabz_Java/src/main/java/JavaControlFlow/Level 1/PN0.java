@@ -1,3 +1,16 @@
+/*
+Problem 6 - GCR Control Flow Level 1
+Write a program to check whether a number is positive, negative, or zero.
+Hint => 
+Get integer input from the user and store it in the number variable.
+If the number is positive, print positive.
+If the number is negative, print negative.
+If the number is zero, print zero. 
+
+* Author: Dheeraj Buchha
+* Date: 21-09-2026
+*/
+
 import java.util.Scanner;
 
 public class PN0 {

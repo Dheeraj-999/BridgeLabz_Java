@@ -1,3 +1,13 @@
+/*
+Problem 2 - GCR Control Flow Level 1
+Write a program to check if the first is the smallest of the 3 numbers.
+I/P => number1, number2, number3
+O/P => Is the first number the smallest? ____
+
+* Author: Dheeraj Buchha
+* Date: 21-09-2026
+*/
+
 import java.util.Scanner;
 
 public class SmallestNumber {
