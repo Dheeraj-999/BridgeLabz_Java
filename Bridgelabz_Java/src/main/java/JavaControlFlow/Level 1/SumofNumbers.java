@@ -13,26 +13,26 @@ The loop will continue till the user enters zero and outside the loop display th
 
 import java.util.Scanner;
 
-public class forLoopCounter {
+public class SumofNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("enter number: ");
         double value = sc.nextDouble();
 
-        double total=0;
+        double total = 0;
 
-        while(value != 0){
+        while (value != 0) {
             total += value;
-            
+
             System.out.println("enter number: ");
             value = sc.nextDouble();
 
         }
 
-        if(value==0){
-             System.out.println("total "+  total);
-            
+        if (value == 0) {
+            System.out.println("total " + total);
+
         }
         sc.close();
     }
