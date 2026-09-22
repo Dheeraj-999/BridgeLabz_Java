@@ -1,0 +1,34 @@
+/*
+Problem 6 - GCR Java Programming elements Level 2
+Create a program to find the total income of a person by taking salary and bonus from user
+Hint => 
+Create a variable named salary and take user input.
+Create another variable bonus and take user input.
+Compute income by adding salary and bonus and print the result
+I/P => salary, bonus
+O/P => The salary is INR ___ and bonus is INR ___. Hence Total Income is INR ___
+
+* Author: Dheeraj Buchha
+ * Date: 22-09-2026
+*/
+
+import java.util.Scanner;
+public class totalIncome {
+ public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+
+  System.out.print("Enter salary: ");
+  double salary = sc.nextDouble();
+
+  System.out.print("Enter bonus: ");
+
+  double bonus = sc.nextDouble();
+
+  double income = salary + bonus;
+
+  System.out.println("The salary is INR " + salary + " and bonus is INR " + bonus+ ". Hence Total Income is INR " + income);
+
+
+  sc.close();
+ }
+}
