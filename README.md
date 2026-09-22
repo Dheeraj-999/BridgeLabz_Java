@@ -2,6 +2,23 @@ Bridgelabz
 
 ## Daily Task Update
 
+### 22 Sep 2026
+
+**What I did:**
+
+- Solved Level 1 problems on Java Arrays.
+- Completed Level 2 problems on Java Programming Elements.
+- Completed the remaining assigned tasks.
+
+**What I will do:**
+
+- Work on Level 2 problems of Java Arrays.
+- Practice more problems to strengthen the concepts.
+
+**Issues Faced:**
+
+- None
+
 ### Day 05 - 21 Sep 2026
 
 **What I did:**
