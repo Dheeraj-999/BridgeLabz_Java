@@ -2,6 +2,26 @@ Bridgelabz
 
 ## Daily Task Update
 
+### 23 Sep 2026
+
+**What I did:**
+
+- Completed Level 1 problems on Java Methods.
+
+- Completed some pending assigned tasks.
+
+- Practiced methods, arrays, and recursion concepts.
+
+**What I will do:**
+
+- Work on Level 2 problems of Java Methods.
+
+- Work on Level 3 problems of Java Methods.
+
+**Issues Faced:**
+
+- None.
+
 ### 22 Sep 2026
 
 **What I did:**
