@@ -11,26 +11,25 @@ Finally, display the result from the array in the format number * i = ___
  */
 
 import java.util.Scanner;
-public class multiplicationTable{
-    public static void main(String[] args){
+
+public class multiplicationTable {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter your number: ");
         int number = sc.nextInt();
 
-
         int arr[] = new int[10];
 
-        for(int i=0;i<10;i++){
-arr[i] = number * (i+1);
+        for (int i = 0; i < 10; i++) {
+            arr[i] = number * (i + 1);
         }
 
-        for(int i=0;i<10;i++){
-             System.out.println(number+" * "+ (i+1)+" = "+ arr[i] );
+        for (int i = 0; i < 10; i++) {
+            System.out.println(number + " * " + (i + 1) + " = " + arr[i]);
 
         }
 
-       
         sc.close();
     }
 }

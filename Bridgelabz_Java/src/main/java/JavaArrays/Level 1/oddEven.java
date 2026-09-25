@@ -14,39 +14,38 @@ Finally, print the odd and even numbers array using the odd and even index
  */
 
 import java.util.Scanner;
-public class oddEven{
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
+
+public class oddEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a natural number: ");
- int number=sc.nextInt();
-        
+        int number = sc.nextInt();
 
-        int oddArr[] =new int[(number /2) + 1];
-        int evenArr[] =new int[(number /2) + 1];
-        int oddIndex=0;
-        int evenIndex=0;
+        int oddArr[] = new int[(number / 2) + 1];
+        int evenArr[] = new int[(number / 2) + 1];
+        int oddIndex = 0;
+        int evenIndex = 0;
 
-        for(int i=0;i<number;i++){
-            if((i+1) % 2==0){
-                evenArr[evenIndex]=i+1;
+        for (int i = 0; i < number; i++) {
+            if ((i + 1) % 2 == 0) {
+                evenArr[evenIndex] = i + 1;
                 evenIndex++;
-            }else{
-                oddArr[oddIndex]=i+1;
+            } else {
+                oddArr[oddIndex] = i + 1;
                 oddIndex++;
             }
         }
 
         System.out.println("even numbers:");
-        for(int i=0;i<evenIndex;i++){
-            System.out.println(evenArr[i]+" ");
+        for (int i = 0; i < evenIndex; i++) {
+            System.out.println(evenArr[i] + " ");
         }
 
         System.out.println("Odd numbers:");
-        for(int i=0;i<oddIndex;i++){
-            System.out.println(oddArr[i]+" ");
+        for (int i = 0; i < oddIndex; i++) {
+            System.out.println(oddArr[i] + " ");
         }
 
-       
-sc.close();
+        sc.close();
     }
 }

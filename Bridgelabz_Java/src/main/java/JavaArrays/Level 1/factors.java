@@ -14,42 +14,43 @@ Finally, Display the factors of the number
  */
 
 import java.util.Scanner;
-public class factors{
-    public static void main(String[] args){
 
-        Scanner sc= new Scanner(System.in);
-        int maxFactor=10;
-        int index=0;
+public class factors {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int maxFactor = 10;
+        int index = 0;
 
         System.out.println("enter a number : ");
         int number = sc.nextInt();
 
-        int factors[]=new int[maxFactor];
+        int factors[] = new int[maxFactor];
 
-        for(int i=1;i<=number;i++){
+        for (int i = 1; i <= number; i++) {
 
-            if((number % i == 0)){
-                if(index==maxFactor){
-                    maxFactor= maxFactor*2;
+            if ((number % i == 0)) {
+                if (index == maxFactor) {
+                    maxFactor = maxFactor * 2;
 
-                    int temp[]=new int[maxFactor];
+                    int temp[] = new int[maxFactor];
 
-                    for(int j=0;j<factors.length;j++){
-                        temp[j]= factors[j];
+                    for (int j = 0; j < factors.length; j++) {
+                        temp[j] = factors[j];
                     }
                     factors = temp;
                 }
-                factors[index]=i;
+                factors[index] = i;
                 index++;
             }
         }
 
-            System.out.println("the factors of "+ number+" are");
+        System.out.println("the factors of " + number + " are");
 
-for(int i=0;i<index;i++){
-    System.out.println(factors[i]);
-}
-sc.close();
+        for (int i = 0; i < index; i++) {
+            System.out.println(factors[i]);
+        }
+        sc.close();
 
     }
 }

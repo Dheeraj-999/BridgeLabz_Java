@@ -12,42 +12,43 @@ Finally compare the first and last element of the array and display if they equa
  */
 
 import java.util.Scanner;
-public class PN0{
-    public static void main(String[] args){
+
+public class PN0 {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number[] = new int[5];
 
-        for(int i=0;i<5;i++){
-            System.out.println("Enter number "+ (i+1) );
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter number " + (i + 1));
             number[i] = sc.nextInt();
         }
 
-        for(int i=0;i<number.length;i++){
-            if(number[i]>0){
-              if(number[i] %2==0){
-                    System.out.println("Number "+number[i] +" is positive and" );
-                     System.out.println("Number is even" );
-              }else{
-                   System.out.println("Number "+number[i] +" is positive and"  );
-                    System.out.println("Number is odd" );
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] > 0) {
+                if (number[i] % 2 == 0) {
+                    System.out.println("Number " + number[i] + " is positive and");
+                    System.out.println("Number is even");
+                } else {
+                    System.out.println("Number " + number[i] + " is positive and");
+                    System.out.println("Number is odd");
 
-              }
+                }
 
-            } else if(number[i]<0){
-             System.out.println("Number "+number[i] +" is negative"  );
+            } else if (number[i] < 0) {
+                System.out.println("Number " + number[i] + " is negative");
 
-            }else{
-             System.out.println("Number "+number[i] +" is zero ");
-      
+            } else {
+                System.out.println("Number " + number[i] + " is zero ");
+
             }
         }
 
-        if(number[0]==number[number.length-1]){
-              System.out.println("First and last element are equal" );
-        }else if(number[0]>number[number.length-1]){
-              System.out.println("First element is greater than last element" );
-        }else{
-              System.out.println("First element is lesser than last element" );
+        if (number[0] == number[number.length - 1]) {
+            System.out.println("First and last element are equal");
+        } else if (number[0] > number[number.length - 1]) {
+            System.out.println("First element is greater than last element");
+        } else {
+            System.out.println("First element is lesser than last element");
         }
         sc.close();
     }

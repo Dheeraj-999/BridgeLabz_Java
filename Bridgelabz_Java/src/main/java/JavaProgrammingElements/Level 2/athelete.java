@@ -11,26 +11,27 @@ O/P => The total number of rounds the athlete will run is ___ to complete 5 km
 */
 
 import java.util.Scanner;
-public class athelete{
- public static void main(String[] args) {
 
-Scanner sc = new Scanner(System.in);
+public class athelete {
+  public static void main(String[] args) {
 
-  System.out.print("Enter side1 in meters: ");
+    Scanner sc = new Scanner(System.in);
 
-  double side1 = sc.nextDouble();
+    System.out.print("Enter side1 in meters: ");
 
-System.out.print("Enter side2 in meters: ");
+    double side1 = sc.nextDouble();
 
-  double side2 = sc.nextDouble();
+    System.out.print("Enter side2 in meters: ");
 
-  System.out.print("Enter side3 in meters: ");
-  double side3 = sc.nextDouble();
+    double side2 = sc.nextDouble();
 
-  double perimeter = side1 + side2 + side3;
-  double rounds = 5000 / perimeter;
+    System.out.print("Enter side3 in meters: ");
+    double side3 = sc.nextDouble();
 
-System.out.println("The total number of rounds the athlete will run is "+ rounds + " to complete 5 km");
-sc.close();
- }
+    double perimeter = side1 + side2 + side3;
+    double rounds = 5000 / perimeter;
+
+    System.out.println("The total number of rounds the athlete will run is " + rounds + " to complete 5 km");
+    sc.close();
+  }
 }
