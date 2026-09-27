@@ -2,6 +2,62 @@ Bridgelabz
 
 ## Daily Task Update
 
+## Daily Task Update
+
+### 26 Sep 2026
+
+**What I did:**
+
+- Completed Level 2 problems on Java Strings.
+- Revised the concepts of Error Handling.
+
+**What I will do:**
+
+- Complete the remaining Level 3 problems on Java Strings.
+- Practice more problems to strengthen the concepts.
+
+**Issues Faced:**
+
+- None
+
+---
+
+### 25 Sep 2026
+
+**What I did:**
+
+- Learned and practiced Java Strings Part 1.
+- Solved Level 3 problems on Java Methods.
+
+**What I will do:**
+
+- Solve Level 2 and Level 3 problems on Java Strings.
+- Strengthen the concepts through practice.
+
+**Issues Faced:**
+
+- None
+
+---
+
+### 24 Sep 2026
+
+**What I did:**
+
+- Solved Level 2 problems on Java Methods.
+- Started working on Level 3 problems.
+
+**What I will do:**
+
+- Complete the Level 3 questions on Java Methods.
+- Revise the concepts covered so far.
+
+**Issues Faced:**
+
+- None
+
+---
+
 ### 23 Sep 2026
 
 **What I did:**
@@ -22,6 +78,8 @@ Bridgelabz
 
 - None.
 
+---
+
 ### 22 Sep 2026
 
 **What I did:**
@@ -38,6 +96,8 @@ Bridgelabz
 **Issues Faced:**
 
 - None
+
+---
 
 ### Day 05 - 21 Sep 2026
 
