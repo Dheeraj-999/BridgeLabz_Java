@@ -2,7 +2,24 @@ Bridgelabz
 
 ## Daily Task Update
 
-## Daily Task Update
+### Date: 28 September 2026
+
+**What I Did Today:**
+
+- Completed the extra problems on Java Strings given today.
+- Practiced and revised different String concepts and problem-solving approaches.
+
+**What I Will Do:**
+
+- Start learning Week 2 concepts.
+- Start solving the problems related to Week 2 concepts.
+- Revise the given topics for Review 1
+
+**Issues Faced:**
+
+- No major issues faced.
+
+---
 
 ### 26 Sep 2026
 
