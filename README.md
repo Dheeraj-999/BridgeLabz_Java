@@ -2,6 +2,31 @@ Bridgelabz
 
 ## Daily Task Update
 
+### Date: 30 September 2026
+
+**What I Did Today:**
+
+- Completed Instance and Class Variables.
+- Completed Day 2 problems.
+
+**What I Will Do:**
+
+- Work on Day 3 tasks.
+
+---
+
+### Date: 29 September 2026
+
+**What I Did Today:**
+
+- Completed Java Classes and Objects Level 1 and Level 2 problems.
+
+**What I Will Do:**
+
+- Work on today's tasks.
+
+---
+
 ### Date: 28 September 2026
 
 **What I Did Today:**
