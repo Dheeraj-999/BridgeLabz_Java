@@ -35,18 +35,6 @@ class BankAccount {
         System.out.println("Account Holder: " + account.accountHolder);
         System.out.println("Balance: " + account.getBalance());
 
-        // Subclass
-        class SavingsAccount extends BankAccount {
-
-            void displayDetails() {
-                System.out.println();
-
-                System.out.println("Inside SavingsAccount:");
-                System.out.println("Account Number: " + accountNumber);
-                System.out.println("Account Holder: " + accountHolder);
-            }
-        }
-
         SavingsAccount savings = new SavingsAccount();
 
         savings.accountNumber = "SAV101";
@@ -54,5 +42,16 @@ class BankAccount {
         savings.accountHolder = "Rahul";
 
         savings.displayDetails();
+    }
+}
+
+class SavingsAccount extends BankAccount {
+
+    void displayDetails() {
+        System.out.println();
+
+        System.out.println("Inside SavingsAccount:");
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Holder: " + accountHolder);
     }
 }

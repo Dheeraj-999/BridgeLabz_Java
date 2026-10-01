@@ -1,60 +1,43 @@
-/*
- * Problem 2: Online Course Management
- * Create a Course class with instance variables courseName,
- * duration, fee and a class variable instituteName.
- */
-
 class Course {
-
-    // Instance variables
     String courseName;
-    int duration;
+    String duration;
     double fee;
 
-    static String instituteName = "BridgeLabz"; // class
+    static String InstitutionName = "BridgeLabz";
 
-    // Constructor
-    Course(String courseName, int duration, double fee) {
-
+    Course(String courseName,
+            String duration,
+            double fee) {
         this.courseName = courseName;
         this.duration = duration;
         this.fee = fee;
     }
 
-    void displayCourseDetails() { // Instance method
-        System.out.println("Course Name: " + courseName);
-        System.out.println("Duration: " + duration + " months");
-        System.out.println("Fee: " + fee);
-        System.out.println("Institute: " + instituteName);
+    void displayCourseDetails() {
+        System.out.println("Course Name=" + courseName);
+        System.out.println("duration=" + duration);
+        System.out.println("fee= " + fee);
+        System.out.println("InstitutionName" + Course.InstitutionName);
+
     }
 
-    // Class method
-    static void updateInstituteName(String newInstituteName) {
-        instituteName = newInstituteName;
+    static void updateInstitueName(String newInstituteName) {
+        InstitutionName = newInstituteName;
     }
 
     public static void main(String[] args) {
 
-        Course course1 = new Course("Java", 4, 15000);
-        Course course2 = new Course("Web Development", 6, 20000);
+        Course course1 = new Course("web dev", "5 months", 14000);
 
+        Course course2 = new Course("aiml", "6 months", 18000);
         course1.displayCourseDetails();
-
-        System.out.println();
         course2.displayCourseDetails();
 
-        System.out.println();
+        Course.updateInstitueName("Akash academy");
+        System.out.println("After updating institue name");
 
-        // Change institute name
-        Course.updateInstituteName("Tech Academy");
-
-        System.out.println("After updating institute name:");
-
-        System.out.println();
         course1.displayCourseDetails();
-
-        System.out.println();
-
         course2.displayCourseDetails();
+
     }
 }

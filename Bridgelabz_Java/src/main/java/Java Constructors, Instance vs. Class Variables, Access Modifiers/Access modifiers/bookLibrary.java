@@ -6,50 +6,45 @@ Date: 29 sept
 */
 
 class Book {
-
     public String ISBN;
     protected String title;
     private String author;
 
-    // Method to set author
-    public void setAuthor(String author) {
+    public void setauthor(String author) {
         this.author = author;
     }
 
-    // Method to get author
-    public String getAuthor() {
+    public String getauthor() {
         return author;
     }
 
     public static void main(String[] args) {
+        Book book1 = new Book();
 
-        Book book = new Book();
+        book1.ISBN = "A89IY67";
+        book1.title = "Ayudha";
+        book1.setauthor("James");
 
-        book.ISBN = "978-1234567890";
-        book.title = "Atomic Habits";
-        book.setAuthor("James Clear");
-
-        System.out.println("ISBN: " + book.ISBN);
-        System.out.println("Title: " + book.title);
-        System.out.println("Author: " + book.getAuthor());
-
-        // Subclass
-        class EBook extends Book {
-
-            void displayDetails() {
-                System.out.println();
-
-                System.out.println("Inside EBook:");
-                System.out.println("ISBN: " + ISBN);
-                System.out.println("Title: " + title);
-            }
-        }
+        System.out.println("ISBN number: " + book1.ISBN);
+        System.out.println("Name: " + book1.title);
+        System.out.println("CGPA: " + book1.getauthor());
 
         EBook ebook = new EBook();
 
-        ebook.ISBN = "978-9876543210";
-        ebook.title = "Java Programming";
+        ebook.ISBN = "908rt67";
+        ebook.title = "Java";
 
+        System.out.println("Ebook details");
         ebook.displayDetails();
+    }
+}
+
+class EBook extends Book {
+
+    void displayDetails() {
+        System.out.println();
+        System.out.println("isbn" + ISBN);
+        System.out.println("title" + title);
+
     }
 }

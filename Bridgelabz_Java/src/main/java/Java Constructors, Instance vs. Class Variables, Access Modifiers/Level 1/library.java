@@ -54,6 +54,7 @@ class Book {
         System.out.println("Available after borrowing: " + book.availability);
 
         System.out.println();
+        System.out.println("Available: " + book.availability);
 
         // Trying to borrow the same book again
         book.borrowBook();
