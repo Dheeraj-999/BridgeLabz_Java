@@ -2,6 +2,24 @@ Bridgelabz
 
 ## Daily Task Update
 
+### Date: 1 Oct 2026
+
+**What I did:**
+
+-Completed Day 3 OOPs tasks.
+-Started Day 4 OOPs tasks.
+-Completed several Day 4 programs based on Static, -this, final, and instanceof.
+
+**What I will do:**
+
+-Complete the remaining Day 4 tasks.
+
+**Issues Faced:**
+
+None.
+
+---
+
 ### Date: 30 September 2026
 
 **What I Did Today:**
