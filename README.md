@@ -2,6 +2,59 @@ Bridgelabz
 
 ## Daily Task Update
 
+## Date: 5 Oct 2026
+
+### What I did
+
+- Completed pending work.
+- Revised the given review topics.
+
+### What I will do
+
+- Continue practicing problems based on OOP.
+- Complete and submit the diagrams in GCR.
+
+### Issues Faced
+
+- None
+
+---
+
+## Date: 3 Oct 2026
+
+### What I did
+
+- Completed the problems on inheritance.
+
+### What I will do
+
+- Complete problems on encapsulation, abstraction, and interfaces.
+- Create the required class diagrams.
+
+### Issues Faced
+
+- None
+
+---
+
+## Date: 2 Oct 2026
+
+### What I did
+
+- Studied inheritance, aggregation, composition, and association.
+- Practiced questions based on these concepts.
+
+### What I will do
+
+- Complete the inheritance problems.
+- Push the Day 4 tasks.
+
+### Issues Faced
+
+- None
+
+---
+
 ### Date: 1 Oct 2026
 
 **What I did:**
