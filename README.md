@@ -2,6 +2,80 @@ Bridgelabz
 
 ## Daily Task Update
 
+## Date: 9 October 2026
+
+### What I Have Done
+
+- Completed Stack and Queue problems.
+- Solved most of the Sorting and Searching problems.
+
+### What I Will Do
+
+- Complete all pending tasks by today.
+- Submit the completed tasks in GCR.
+
+### Issues Faced
+
+- None
+
+---
+
+## Date: 8 October 2026
+
+### What I Have Done
+
+- Completed Linked List problems.
+- Worked on Stack and Queue problems.
+
+### What I Will Do
+
+- Work on pending tasks.
+- Continue practicing Stack and Queue problems.
+
+### Issues Faced
+
+- None
+
+---
+
+## Date: 7 October 2026
+
+### What I Have Done
+
+- Learned Linked List concepts.
+- Solved problems related to Linked Lists.
+- Started learning Stack and Queue concepts.
+
+### What I Will Do
+
+- Push the Linked List problems to the repository.
+- Continue solving Stack and Queue problems.
+
+### Issues Faced
+
+- None
+
+---
+
+## Date: 6 October 2026
+
+### What I Have Done
+
+- Started learning Linked List concepts.
+- Practiced implementing Linked Lists.
+- Started solving the day's problems.
+
+### What I Will Do
+
+- Complete the remaining Linked List problems.
+- Push the completed problems to the repository.
+
+### Issues Faced
+
+- None
+
+---
+
 ## Date: 5 Oct 2026
 
 ### What I did
