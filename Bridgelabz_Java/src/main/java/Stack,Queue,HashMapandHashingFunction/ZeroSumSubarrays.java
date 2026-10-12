@@ -1,4 +1,11 @@
 
+/*
+Find All Subarrays with Zero Sum
+Problem: Given an array, find all subarrays whose elements sum up to zero.
+Hint: Use a hash map to store the cumulative sum and its frequency. If a sum repeats, a zero-sum subarray exists.
+
+Author: Dheeraj Buchha
+*/
 import java.util.*;
 
 public class ZeroSumSubarrays {

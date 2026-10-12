@@ -1,3 +1,19 @@
+/*
+Problem Statement: Create a system to manage social media friend connections using a singly linked list. Each node represents a user with User ID, Name, Age, and List of Friend IDs. Implement the following operations:
+Add a friend connection between two users.
+Remove a friend connection.
+Find mutual friends between two users.
+Display all friends of a specific user.
+Search for a user by Name or User ID.
+Count the number of friends for each user.
+Hint:
+Use a singly linked list where each node contains a list of friends (which can be another linked list or array of Friend IDs).
+For mutual friends, traverse both lists and compare the Friend IDs.
+The List of Friend IDs for each user can be implemented as a nested linked list or array.
+
+Author: Dheeraj Buchha
+*/
+
 import java.util.ArrayList;
 
 class Node {
@@ -17,11 +33,9 @@ class Node {
     }
 }
 
-
 class SocialMedia {
 
     Node head = null;
-
 
     // Find user by ID
     Node findUser(int userId) {
@@ -39,7 +53,6 @@ class SocialMedia {
 
         return null;
     }
-
 
     // Add a new user
     void addUser(int userId, String name, int age) {
@@ -60,7 +73,6 @@ class SocialMedia {
         current.next = newNode;
     }
 
-
     // 1. Add friend connection
     void addFriend(int userId1, int userId2) {
 
@@ -78,7 +90,6 @@ class SocialMedia {
         System.out.println("Friend connection added");
     }
 
-
     // 2. Remove friend connection
     void removeFriend(int userId1, int userId2) {
 
@@ -95,7 +106,6 @@ class SocialMedia {
 
         System.out.println("Friend connection removed");
     }
-
 
     // 3. Find mutual friends
     void findMutualFriends(int userId1, int userId2) {
@@ -117,12 +127,10 @@ class SocialMedia {
                 Node friend = findUser(friendId);
 
                 System.out.println(
-                        friend.userId + " - " + friend.name
-                );
+                        friend.userId + " - " + friend.name);
             }
         }
     }
-
 
     // 4. Display all friends
     void displayFriends(int userId) {
@@ -141,11 +149,9 @@ class SocialMedia {
             Node friend = findUser(friendId);
 
             System.out.println(
-                    friend.userId + " - " + friend.name
-            );
+                    friend.userId + " - " + friend.name);
         }
     }
-
 
     // 5. Search by name or ID
     void searchUser(String name, int userId) {
@@ -155,7 +161,7 @@ class SocialMedia {
         while (current != null) {
 
             if (current.name.equals(name) ||
-                current.userId == userId) {
+                    current.userId == userId) {
 
                 System.out.println("User Found:");
                 System.out.println("ID: " + current.userId);
@@ -171,7 +177,6 @@ class SocialMedia {
         System.out.println("User not found");
     }
 
-
     // 6. Count friends for each user
     void countFriends() {
 
@@ -181,15 +186,13 @@ class SocialMedia {
 
             System.out.println(
                     current.name + " has " +
-                    current.friends.size() +
-                    " friends"
-            );
+                            current.friends.size() +
+                            " friends");
 
             current = current.next;
         }
     }
 }
-
 
 public class SocialMediaManagement {
 
@@ -197,13 +200,11 @@ public class SocialMediaManagement {
 
         SocialMedia socialMedia = new SocialMedia();
 
-
         // Add users
         socialMedia.addUser(101, "Dheeraj", 21);
         socialMedia.addUser(102, "Rahul", 22);
         socialMedia.addUser(103, "Aman", 21);
         socialMedia.addUser(104, "Rohit", 23);
-
 
         // Add friendships
         socialMedia.addFriend(101, 102);
@@ -211,26 +212,21 @@ public class SocialMediaManagement {
         socialMedia.addFriend(102, 103);
         socialMedia.addFriend(102, 104);
 
-
         // Display friends
         System.out.println("\n--- FRIENDS ---");
         socialMedia.displayFriends(101);
-
 
         // Mutual friends
         System.out.println("\n--- MUTUAL FRIENDS ---");
         socialMedia.findMutualFriends(101, 102);
 
-
         // Search user
         System.out.println("\n--- SEARCH ---");
         socialMedia.searchUser("Aman", 103);
 
-
         // Remove friendship
         System.out.println("\n--- REMOVE FRIEND ---");
         socialMedia.removeFriend(101, 103);
-
 
         // Count friends
         System.out.println("\n--- FRIEND COUNT ---");

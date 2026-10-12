@@ -1,3 +1,19 @@
+/*
+Problem Statement: Design a library management system using a doubly linked list. Each node represents a book and contains the following attributes: Book Title, Author, Genre, Book ID, and Availability Status. Implement the following functionalities:
+Add a new book at the beginning, end, or at a specific position.
+Remove a book by Book ID.
+Search for a book by Book Title or Author.
+Update a book’s Availability Status.
+Display all books in forward and reverse order.
+Count the total number of books in the library.
+Hint:
+Use a doubly linked list with two pointers (next and prev) in each node to facilitate traversal in both directions.
+Ensure that when removing a book, both the next and prev pointers are correctly updated.
+Displaying in reverse order will require traversal from the last node using prev pointers.
+
+Author: Dheeraj Buchha
+*/
+
 class Node {
 
     String bookTitle;
@@ -10,7 +26,7 @@ class Node {
     Node next;
 
     Node(String bookTitle, String author, String genre,
-         int bookId, boolean available) {
+            int bookId, boolean available) {
 
         this.bookTitle = bookTitle;
         this.author = author;
@@ -20,19 +36,17 @@ class Node {
     }
 }
 
-
 class Library {
 
     Node head = null;
     Node tail = null;
 
-
     // 1. Add at beginning
     void addFirst(String bookTitle, String author, String genre,
-                  int bookId, boolean available) {
+            int bookId, boolean available) {
 
         Node newNode = new Node(bookTitle, author, genre,
-                                bookId, available);
+                bookId, available);
 
         if (head == null) {
             head = newNode;
@@ -47,13 +61,12 @@ class Library {
         head = newNode;
     }
 
-
     // 2. Add at end
     void addLast(String bookTitle, String author, String genre,
-                 int bookId, boolean available) {
+            int bookId, boolean available) {
 
         Node newNode = new Node(bookTitle, author, genre,
-                                bookId, available);
+                bookId, available);
 
         if (head == null) {
             head = newNode;
@@ -73,10 +86,9 @@ class Library {
         tail = newNode;
     }
 
-
     // 3. Add at specific position
     void addMiddle(int position, String bookTitle, String author,
-                   String genre, int bookId, boolean available) {
+            String genre, int bookId, boolean available) {
 
         if (position == 1) {
             addFirst(bookTitle, author, genre, bookId, available);
@@ -95,7 +107,7 @@ class Library {
         }
 
         Node newNode = new Node(bookTitle, author, genre,
-                                bookId, available);
+                bookId, available);
 
         Node temp = current.next;
 
@@ -110,7 +122,6 @@ class Library {
             tail = newNode;
         }
     }
-
 
     // 4. Remove book by Book ID
     void removeBook(int bookId) {
@@ -157,7 +168,6 @@ class Library {
         System.out.println("Book not found");
     }
 
-
     // 5. Search by Book Title or Author
     void searchBook(String title, String author) {
 
@@ -166,7 +176,7 @@ class Library {
         while (current != null) {
 
             if (current.bookTitle.equals(title) ||
-                current.author.equals(author)) {
+                    current.author.equals(author)) {
 
                 System.out.println("Book Found:");
                 displayBook(current);
@@ -175,7 +185,6 @@ class Library {
             current = current.next;
         }
     }
-
 
     // 6. Update Availability Status
     void updateAvailability(int bookId, boolean status) {
@@ -198,7 +207,6 @@ class Library {
         System.out.println("Book not found");
     }
 
-
     // Display one book
     void displayBook(Node current) {
 
@@ -209,7 +217,6 @@ class Library {
         System.out.println("Available: " + current.available);
         System.out.println();
     }
-
 
     // 7. Display Forward
     void displayForward() {
@@ -224,7 +231,6 @@ class Library {
         }
     }
 
-
     // 8. Display Reverse
     void displayBackward() {
 
@@ -237,7 +243,6 @@ class Library {
             current = current.prev;
         }
     }
-
 
     // 9. Count total books
     int countBooks() {
@@ -255,13 +260,11 @@ class Library {
     }
 }
 
-
 public class LibraryManagement {
 
     public static void main(String[] args) {
 
         Library library = new Library();
-
 
         // Add books
         library.addFirst(
@@ -269,24 +272,21 @@ public class LibraryManagement {
                 "J.K Rowling",
                 "Fantasy",
                 101,
-                true
-        );
+                true);
 
         library.addLast(
                 "Atomic Habits",
                 "James Clear",
                 "Self Help",
                 102,
-                true
-        );
+                true);
 
         library.addLast(
                 "The Alchemist",
                 "Paulo Coelho",
                 "Fiction",
                 103,
-                false
-        );
+                false);
 
         library.addMiddle(
                 2,
@@ -294,33 +294,25 @@ public class LibraryManagement {
                 "Robert Martin",
                 "Programming",
                 104,
-                true
-        );
-
+                true);
 
         System.out.println("===== FORWARD =====");
         library.displayForward();
 
-
         System.out.println("===== BACKWARD =====");
         library.displayBackward();
-
 
         System.out.println("===== SEARCH =====");
         library.searchBook("Clean Code", "Robert Martin");
 
-
         System.out.println("===== UPDATE =====");
         library.updateAvailability(103, true);
-
 
         System.out.println("===== REMOVE =====");
         library.removeBook(102);
 
-
         System.out.println("===== AFTER REMOVE =====");
         library.displayForward();
-
 
         System.out.println("Total Books: " + library.countBooks());
     }

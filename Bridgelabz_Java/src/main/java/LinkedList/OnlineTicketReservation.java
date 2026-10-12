@@ -1,3 +1,14 @@
+/*
+Problem Statement: Design an online ticket reservation system using a circular linked list, where each node represents a booked ticket. Each node will store the following information: Ticket ID, Customer Name, Movie Name, Seat Number, and Booking Time. Implement the following functionalities:
+Add a new ticket reservation at the end of the circular list.
+Remove a ticket by Ticket ID.
+Display the current tickets in the list.
+Search for a ticket by Customer Name or Movie Name.
+Calculate the total number of booked tickets.
+
+Author: Dheeraj Buchha
+*/
+
 class Node {
     int ticketId;
     String customerName;
@@ -7,7 +18,7 @@ class Node {
     Node next;
 
     Node(int ticketId, String customerName, String movieName,
-         int seatNumber, String bookingTime) {
+            int seatNumber, String bookingTime) {
         this.ticketId = ticketId;
         this.customerName = customerName;
         this.movieName = movieName;
@@ -21,7 +32,7 @@ class TicketReservation {
     Node tail = null;
 
     void addTicket(int ticketId, String customerName, String movieName,
-                   int seatNumber, String bookingTime) {
+            int seatNumber, String bookingTime) {
 
         Node newNode = new Node(ticketId, customerName, movieName,
                 seatNumber, bookingTime);
@@ -54,12 +65,10 @@ class TicketReservation {
                 if (head == tail) {
                     head = null;
                     tail = null;
-                }
-                else if (current == head) {
+                } else if (current == head) {
                     head = head.next;
                     tail.next = head;
-                }
-                else {
+                } else {
                     previous.next = current.next;
 
                     if (current == tail) {

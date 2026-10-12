@@ -1,3 +1,11 @@
+/*
+Longest Consecutive Sequence
+Problem: Given an unsorted array, find the length of the longest consecutive elements sequence.
+Hint: Use a hash map to store elements and check for consecutive elements efficiently.
+
+Author: Dheeraj Buchha
+*/
+
 import java.util.HashMap;
 
 public class LongestConsequence {

@@ -1,3 +1,11 @@
+/*
+Two Sum Problem
+Problem: Given an array and a target sum, find two indices such that their values add up to the target.
+Hint: Use a hash map to store the index of each element as you iterate. Check if target - current_element exists in the map.
+
+Author: Dheeraj Buchha
+*/
+
 import java.util.HashMap;
 
 public class TwoSum {

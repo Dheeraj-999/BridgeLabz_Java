@@ -1,3 +1,10 @@
+/*
+Circular Tour Problem
+Problem: Given a set of petrol pumps with petrol and distance to the next pump, determine the starting point for completing a circular tour.
+Hint: Use a queue to simulate the tour, keeping track of surplus petrol at each pump.
+
+Author: Dheeraj Buchha
+*/
 
 import java.util.LinkedList;
 import java.util.Queue;

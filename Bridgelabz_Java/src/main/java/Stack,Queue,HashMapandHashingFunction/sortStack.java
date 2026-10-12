@@ -1,3 +1,11 @@
+/*
+Sort a Stack Using Recursion
+Problem: Given a stack, sort its elements in ascending order using recursion.
+Hint: Pop elements recursively, sort the remaining stack, and insert the popped element back at the correct position
+
+Author: Dheeraj Buchha
+*/
+
 import java.util.Stack;
 
 public class sortStack {

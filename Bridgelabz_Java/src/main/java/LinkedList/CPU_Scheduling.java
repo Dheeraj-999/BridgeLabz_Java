@@ -1,3 +1,18 @@
+/*
+Problem Statement: Implement a round-robin CPU scheduling algorithm using a circular linked list. Each node will represent a process and contain Process ID, Burst Time, and Priority. Implement the following functionalities:
+Add a new process at the end of the circular list.
+Remove a process by Process ID after its execution.
+Simulate the scheduling of processes in a round-robin manner with a fixed time quantum.
+Display the list of processes in the circular queue after each round.
+Calculate and display the average waiting time and turn-around time for all processes.
+Hint:
+Use a circular linked list to represent a queue of processes.
+Each process executes for a fixed time quantum, and then control moves to the next process in the circular list.
+Maintain the current node as the process being executed, and after each round, update the list to simulate execution.
+
+Author: Dheeraj Buchha
+*/
+
 class Node {
 
     int processId;
@@ -13,12 +28,10 @@ class Node {
     }
 }
 
-
 class RoundRobin {
 
     Node head = null;
     Node tail = null;
-
 
     // 1. Add process at end
     void addProcess(int processId, int burstTime, int priority) {
@@ -41,7 +54,6 @@ class RoundRobin {
         // Make it circular
         tail.next = head;
     }
-
 
     // 2. Remove process by ID
     void removeProcess(int processId) {
@@ -88,7 +100,6 @@ class RoundRobin {
         } while (current != head);
     }
 
-
     // 3. Display circular list
     void display() {
 
@@ -102,9 +113,8 @@ class RoundRobin {
         do {
             System.out.println(
                     "P" + current.processId +
-                    " | Burst Time: " + current.burstTime +
-                    " | Priority: " + current.priority
-            );
+                            " | Burst Time: " + current.burstTime +
+                            " | Priority: " + current.priority);
 
             current = current.next;
 
@@ -112,7 +122,6 @@ class RoundRobin {
 
         System.out.println();
     }
-
 
     // 4. Round Robin Scheduling
     void schedule(int quantum) {
@@ -137,8 +146,7 @@ class RoundRobin {
 
             if (current.burstTime > quantum) {
 
-                current.burstTime =
-                        current.burstTime - quantum;
+                current.burstTime = current.burstTime - quantum;
 
                 elapsedTime = elapsedTime + quantum;
 
@@ -152,14 +160,11 @@ class RoundRobin {
 
                 int turnAroundTime = elapsedTime;
 
-                int waitingTime =
-                        turnAroundTime - getOriginalBurstTime(current.processId);
+                int waitingTime = turnAroundTime - getOriginalBurstTime(current.processId);
 
-                totalTurnAroundTime =
-                        totalTurnAroundTime + turnAroundTime;
+                totalTurnAroundTime = totalTurnAroundTime + turnAroundTime;
 
-                totalWaitingTime =
-                        totalWaitingTime + waitingTime;
+                totalWaitingTime = totalWaitingTime + waitingTime;
 
                 int completedId = current.processId;
 
@@ -170,8 +175,7 @@ class RoundRobin {
                 completed++;
 
                 System.out.println(
-                        "Process P" + completedId + " completed"
-                );
+                        "Process P" + completedId + " completed");
 
                 System.out.println("Processes remaining:");
 
@@ -191,15 +195,12 @@ class RoundRobin {
 
         System.out.println(
                 "Average Waiting Time: " +
-                (double) totalWaitingTime / totalProcesses
-        );
+                        (double) totalWaitingTime / totalProcesses);
 
         System.out.println(
                 "Average Turnaround Time: " +
-                (double) totalTurnAroundTime / totalProcesses
-        );
+                        (double) totalTurnAroundTime / totalProcesses);
     }
-
 
     int countProcesses() {
 
@@ -218,7 +219,6 @@ class RoundRobin {
         return count;
     }
 
-
     // For simplicity, original burst time is fixed here
     int getOriginalBurstTime(int processId) {
 
@@ -226,7 +226,6 @@ class RoundRobin {
         return 0;
     }
 }
-
 
 public class CPU_Scheduling {
 
